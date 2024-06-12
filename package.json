@@ -1,0 +1,41 @@
+{
+    "name": "chat-example",
+    "version": "1.0.0",
+    "license": "MIT",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "yarn lint && yarn typecheck && yarn webpack",
+        "typecheck": "tsc",
+        "lint": "eslint ./src --fix",
+        "start": "webpack serve --open",
+        "generate-types": "flowdb generate-types --local -m src/backend/index.ts --output src/generated-types.ts"
+    },
+    "dependencies": {
+        "@eslint/js": "^9.1.1",
+        "@flowdb/api": "0.3.0",
+        "@flowdb/cli": "0.3.0",
+        "@flowdb/react": "0.3.0",
+        "@types/node": "^20.12.7",
+        "@types/react": "^18.2.79",
+        "@types/react-dom": "^18.2.25",
+        "@types/webpack": "^5.28.5",
+        "eslint": "^9.1.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.1.3",
+        "html-webpack-plugin": "^5.6.0",
+        "prettier": "^3.2.5",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.23.1",
+        "styled-components": "^6.1.8",
+        "ts-loader": "^9.5.1",
+        "ts-node": "^10.9.2",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.4.5",
+        "typescript-eslint": "^7.7.0",
+        "webpack": "^5.91.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.0.4"
+    }
+}
